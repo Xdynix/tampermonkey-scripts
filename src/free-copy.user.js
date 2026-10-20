@@ -2,15 +2,12 @@
 // @name         Free Copy
 // @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.2.5
+// @version      0.2.6
 // @description  Enable copying on some sites.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/free-copy.user.js
 // @downloadURL  https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/free-copy.user.js
 // @require      https://code.jquery.com/jquery-4.0.0.min.js#sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=
-// @match        *://pad.skyozora.com/*
-// @match        *://www.anitama.cn/*
-// @match        *://www.bilibili.com/*
 // @match        *://www.zhihu.com/*
 // @match        *://bbs.nga.cn/*
 // @match        *://ngabbs.com/*
@@ -43,19 +40,6 @@
             .css('-webkit-touch-callout', 'default');
     }
 
-    if (url.host === 'pad.skyozora.com' && url.pathname.startsWith('/news')) {
-        setCssUserSelect('*');
-    }
-    if (url.host === 'www.anitama.cn') {
-        $('#area-content-article').on('copy', onCopy);
-    }
-    if (url.host === 'www.bilibili.com' && url.pathname.startsWith('/read')) {
-        setTimeout(() => {
-            $(document).on('copy', onCopy);
-            $('#article-content').on('copy', onCopy);
-            $('.unable-reprint').css('user-select', 'text');
-        }, 1000);
-    }
     if (url.host === 'www.zhihu.com') {
         $(document).on('copy', onCopy);
     }

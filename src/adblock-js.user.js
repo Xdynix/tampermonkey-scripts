@@ -2,7 +2,7 @@
 // @name         AdBlock JS
 // @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.1.13
+// @version      0.1.14
 // @description  Custom ad-block using js.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/adblock-js.user.js
@@ -13,7 +13,7 @@
 // @match        *://jandan.net/*
 // @match        *://share.dmhy.org/*
 // @match        *://tieba.baidu.com/*
-// @match        *://www.tsdm.live/*
+// @match        *://www.tsdm39.com/*
 // @match        *://www.pixiv.net/*
 // @grant        none
 // ==/UserScript==
@@ -45,8 +45,8 @@
     if (url.host.endsWith('wikihow.com')) {
         $('.wh_ad_inner').remove();
     }
-    if (url.host === 'www.tsdm.live' && url.pathname.startsWith('/plugin.php')) {
-        $('.qdsmile li a').removeAttr('href').removeAttr('target');
+    if (url.host === 'www.tsdm39.com' && url.pathname.startsWith('/plugin.php')) {
+        $('.qdsmile li').removeAttr('data-link');
     }
     if (url.host === 'www.pixiv.net') {
         $('#js-mount-point-header').removeClass('with-ad');

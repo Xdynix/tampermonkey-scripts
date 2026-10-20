@@ -2,7 +2,7 @@
 // @name         Misc Rules
 // @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      1.2.7
+// @version      1.2.8
 // @description  Misc rules.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/misc-rules.user.js
@@ -73,11 +73,6 @@
             });
             $('span.reply-content > i.icon.search-word').remove();
         }, 100);
-    }
-
-    if (url.host === 'www.vgtime.com') {
-        // Modify styles
-        $('html > head').append($('<style>.show_big_album_img_arrow { width: 30% !important; }</style>'));
     }
 
     // Disable Bilibili external player autoplay
