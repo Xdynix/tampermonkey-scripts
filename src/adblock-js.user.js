@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         AdBlock JS
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.1.12
+// @version      0.1.13
 // @description  Custom ad-block using js.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/adblock-js.user.js

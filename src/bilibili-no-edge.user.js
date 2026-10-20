@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Bilibili No Jump Edge
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.0.2
+// @version      0.0.3
 // @description  Prevent Bilibili player from opening Edge
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/bilibili-no-edge.user.js

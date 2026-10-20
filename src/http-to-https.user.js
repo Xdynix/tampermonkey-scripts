@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         HTTP to HTTPS
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.2.3
+// @version      0.2.4
 // @description  Redirect sites to HTTPS
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/http-to-https.user.js

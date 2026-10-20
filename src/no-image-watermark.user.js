@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         No Image Watermark
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.0.4
+// @version      0.0.5
 // @description  Remove image watermarks.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/no-image-watermark.user.js

@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Misc Rules
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      1.2.6
+// @version      1.2.7
 // @description  Misc rules.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/misc-rules.user.js

@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Host Normalize
-// @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
+// @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      1.1.0
+// @version      1.1.1
 // @description  Redirect alternate hostnames to their canonical host.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/host-normalize.user.js
