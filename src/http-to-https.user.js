@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         HTTP to HTTPS
 // @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
-// @homepage     https://github.com/Xdynix/Tampermonkey-Scripts
-// @version      0.2.2
+// @homepage     https://github.com/Xdynix/tampermonkey-scripts
+// @version      0.2.3
 // @description  Redirect sites to HTTPS
 // @author       Xdynix
-// @updateURL    https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/http-to-https.user.js
-// @downloadURL  https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/http-to-https.user.js
+// @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/http-to-https.user.js
+// @downloadURL  https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/http-to-https.user.js
 // @match        http://bangumi.tv/*
 // @match        http://jandan.net/*
 // @match        http://meipin.im/*

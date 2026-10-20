@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         No Image Watermark
 // @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
-// @homepage     https://github.com/Xdynix/Tampermonkey-Scripts
-// @version      0.0.3
+// @homepage     https://github.com/Xdynix/tampermonkey-scripts
+// @version      0.0.4
 // @description  Remove image watermarks.
 // @author       Xdynix
-// @updateURL    https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/no-image-watermark.user.js
-// @downloadURL  https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/no-image-watermark.user.js
+// @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/no-image-watermark.user.js
+// @downloadURL  https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/no-image-watermark.user.js
 // @require      https://code.jquery.com/jquery-4.0.0.min.js#sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=
 // @match        https://www.gcores.com/*
 // @match        https://www.yystv.cn/*
