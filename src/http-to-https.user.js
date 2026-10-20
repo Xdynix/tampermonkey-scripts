@@ -21,5 +21,5 @@
     'use strict';
 
     // noinspection HttpUrlsUsage
-    window.location.href = window.location.href.replace('http://', 'https://');
+    window.location.replace(window.location.href.replace('http://', 'https://'));
 })();

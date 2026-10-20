@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Xdynix/Tampermonkey-Scripts
 // @homepage     https://github.com/Xdynix/Tampermonkey-Scripts
 // @version      1.0.0
-// @description  Redirect sites to HTTPS
+// @description  Redirect NGA mirror hosts to bbs.nga.cn
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/nga-host-normalize.user.js
 // @downloadURL  https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/nga-host-normalize.user.js
@@ -21,5 +21,5 @@
     url.host = 'bbs.nga.cn';
     urlParams.delete('rand');
     url.search = urlParams.toString();
-    window.location.href = url.toString();
+    window.location.replace(url.toString());
 })();

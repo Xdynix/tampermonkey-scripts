@@ -7,7 +7,7 @@
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/no-image-watermark.user.js
 // @downloadURL  https://github.com/Xdynix/Tampermonkey-Scripts/raw/master/src/no-image-watermark.user.js
-// @require      https://code.jquery.com/jquery-4.0.0-beta.min.js
+// @require      https://code.jquery.com/jquery-4.0.0.min.js#sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=
 // @match        https://www.gcores.com/*
 // @match        https://www.yystv.cn/*
 // @grant        none
@@ -55,7 +55,7 @@
                         const parameters = ossProcess.split('/').filter((param) => {
                             if (param === 'content_watermark') return false;
                             if (param.startsWith('watermark')) return false;
-                            return 1;
+                            return true;
                         });
                         urlParams.set('x-oss-process', parameters.join('/'));
                     }

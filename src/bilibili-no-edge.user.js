@@ -20,13 +20,13 @@
     const mode = urlParams.get('mode');
     if (mode === 'play') {
         const videoId = urlParams.get('bvid');
-        if (videoId !== undefined) {
-            window.location.href = `https://www.bilibili.com/video/${videoId}`;
+        if (videoId !== null) {
+            window.location.replace(`https://www.bilibili.com/video/${videoId}`);
         }
     } else if (mode === 'space') {
         const userId = urlParams.get('mid');
-        if (userId !== undefined) {
-            window.location.href = `https://space.bilibili.com/${userId}`;
+        if (userId !== null) {
+            window.location.replace(`https://space.bilibili.com/${userId}`);
         }
     }
     console.log('Fxxk Bilibili and Edge.');
