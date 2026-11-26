@@ -2,7 +2,7 @@
 // @name         Free Copy
 // @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      0.2.6
+// @version      0.2.7
 // @description  Enable copying on some sites.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/free-copy.user.js
@@ -13,6 +13,7 @@
 // @match        *://ngabbs.com/*
 // @match        *://nga.178.com/*
 // @match        *://www.dlsite.com/*
+// @match        *://www.rednote.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -40,7 +41,7 @@
             .css('-webkit-touch-callout', 'default');
     }
 
-    if (url.host === 'www.zhihu.com') {
+    if (url.host === 'www.zhihu.com' || url.host === 'www.rednote.com') {
         $(document).on('copy', onCopy);
     }
     if (url.host === 'bbs.nga.cn' || url.host === 'ngabbs.com' || url.host === 'nga.178.com') {
