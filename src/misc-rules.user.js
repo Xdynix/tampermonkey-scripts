@@ -2,7 +2,7 @@
 // @name         Misc Rules
 // @namespace    https://github.com/Xdynix/tampermonkey-scripts
 // @homepage     https://github.com/Xdynix/tampermonkey-scripts
-// @version      1.2.8
+// @version      1.2.9
 // @description  Misc rules.
 // @author       Xdynix
 // @updateURL    https://github.com/Xdynix/tampermonkey-scripts/raw/main/src/misc-rules.user.js
@@ -72,6 +72,19 @@
                 return $(this).text();
             });
             $('span.reply-content > i.icon.search-word').remove();
+        }, 100);
+    }
+
+    if (url.host === 'www.rednote.com') {
+        // The site skips its automatic login popups whenever this gate returns true.
+        const loop = setInterval(() => {
+            const pinia = document.querySelector('#app')?.__vue_app__?.config.globalProperties.$pinia;
+            const guestBrowse = pinia?._s.get('guestBrowse');
+            if (guestBrowse) {
+                guestBrowse.shouldSuppress = () => true;
+                clearInterval(loop);
+                console.log('Not logging in.');
+            }
         }, 100);
     }
 
